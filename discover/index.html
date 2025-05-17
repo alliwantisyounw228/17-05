@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>murmur</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+  <header>
+    <nav>
+      <img src="./img/Logo.png" alt="logo">
+      <ul>
+        <li><a href="#">Discover</a></li>
+        <li><a href="#">Creators</a></li>
+        <li><a href="#">Sell</a></li>
+        <li><a href="#">Stats</a></li>
+      </ul>
+      <div class="search">
+        <div class="search2">
+          <img src="./img/search.png" alt="search">
+          <input type="search" placeholder="Search Art Work / Creator">
+        </div>
+        <button>Connect Wallet</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Discover NFTs</h1>
+    <div class="filters">
+      <a href="#" data-category="all" id="all">
+        <img src="./img/category.png" alt="category">
+        All
+      </a>
+      <a href="#" data-category="orange" id="orange">
+        <img src="./img/collection.png" alt="collection">
+        Orange
+      </a>
+      <a href="#" data-category="blue" id="blue">
+        <img src="./img/collection.png" alt="collection">
+        Blue
+      </a>
+      <a href="#" data-category="pink" id="pink">
+        <img src="./img/collection.png" alt="collection">
+        Pink
+      </a>
+      <a href="#" data-category="gray" id="gray">
+        <img src="./img/collection.png" alt="collection">
+        Gray
+      </a>
+      <a href="#" class="button" id="sort-price">
+        <img src="./img/img3.png" alt="Sort by Price" />Сортировать по цене
+      </a>
+    </div>
+    <div class="cards" id="cards">
+      
+    </div>
+
+    
+    <!-- <div class="nft-grid">
+      <div class="nft-card">
+        <div class="nft-header">
+          <img src="./img/1.png" alt="NFT Image">
+          <span class="timer">07h 09m 12s</span>
+        </div>
+        
+        <p class="title_card">Sun-Glass</p>
+        <div class="bid2">
+          <div class="bid3">
+           <p class="bid">Current bid</p>
+           <p class="price">
+           <img src="./img/icon.png" alt="icon">
+           1.75
+           </p>
+          </div>
+          <button>Place Bid</button>
+        </div>
+      </div>
+      <div class="nft-card">
+        <div class="nft-header">
+          <img src="./img/2.png" alt="NFT Image">
+          <span class="timer">07h 09m 12s</span>
+        </div>
+        
+        <p class="title_card">Sun-Glass</p>
+        <div class="bid2">
+          <div class="bid3">
+           <p class="bid">Current bid</p>
+           <p class="price">
+           <img src="./img/icon.png" alt="icon">
+           1.75
+           </p>
+          </div>
+          <button>Place Bid</button>
+        </div>
+      </div>
+      <div class="nft-card">
+        <div class="nft-header">
+          <img src="./img/3.png" alt="NFT Image">
+          <span class="timer">07h 09m 12s</span>
+        </div>
+        
+        <p class="title_card">Sun-Glass</p>
+        <div class="bid2">
+          <div class="bid3">
+           <p class="bid">Current bid</p>
+           <p class="price">
+           <img src="./img/icon.png" alt="icon">
+           1.75
+           </p>
+          </div>
+          <button>Place Bid</button>
+        </div>
+      </div>
+      <div class="nft-card">
+        <div class="nft-header">
+          <img src="./img/4.png" alt="NFT Image">
+          <span class="timer">07h 09m 12s</span>
+        </div>
+        
+        <p class="title_card">Sun-Glass</p>
+        <div class="bid2">
+          <div class="bid3">
+           <p class="bid">Current bid</p>
+           <p class="price">
+           <img src="./img/icon.png" alt="icon">
+           1.75
+           </p>
+          </div>
+          <button>Place Bid</button>
+        </div>
+      </div>
+      <div class="nft-card">
+        <div class="nft-header">
+          <img src="./img/2.png" alt="NFT Image">
+          <span class="timer">07h 09m 12s</span>
+        </div>
+        
+        <p class="title_card">Sun-Glass</p>
+        <div class="bid2">
+          <div class="bid3">
+           <p class="bid">Current bid</p>
+           <p class="price">
+           <img src="./img/icon.png" alt="icon">
+           1.75
+           </p>
+          </div>
+          <button>Place Bid</button>
+        </div>
+      </div>
+      <div class="nft-card">
+        <div class="nft-header">
+          <img src="./img/1.png" alt="NFT Image">
+          <span class="timer">07h 09m 12s</span>
+        </div>
+        
+        <p class="title_card">Sun-Glass</p>
+        <div class="bid2">
+          <div class="bid3">
+           <p class="bid">Current bid</p>
+           <p class="price">
+           <img src="./img/icon.png" alt="icon">
+           1.75
+           </p>
+          </div>
+          <button>Place Bid</button>
+        </div>
+      </div>
+      <div class="nft-card">
+        <div class="nft-header">
+          <img src="./img/4.png" alt="NFT Image">
+          <span class="timer">07h 09m 12s</span>
+        </div>
+        
+        <p class="title_card">Sun-Glass</p>
+        <div class="bid2">
+          <div class="bid3">
+           <p class="bid">Current bid</p>
+           <p class="price">
+           <img src="./img/icon.png" alt="icon">
+           1.75
+           </p>
+          </div>
+          <button>Place Bid</button>
+        </div>
+      </div>
+      <div class="nft-card">
+        <div class="nft-header">
+          <img src="./img/3.png" alt="NFT Image">
+          <span class="timer">07h 09m 12s</span>
+        </div>
+        
+        <p class="title_card">Sun-Glass</p>
+        <div class="bid2">
+          <div class="bid3">
+           <p class="bid">Current bid</p>
+           <p class="price">
+           <img src="./img/icon.png" alt="icon">
+           1.75
+           </p>
+          </div>
+          <button>Place Bid</button>
+        </div>
+      </div>
+      <div class="nft-card">
+        <div class="nft-header">
+          <img src="./img/3.png" alt="NFT Image">
+          <span class="timer">07h 09m 12s</span>
+        </div>
+        
+        <p class="title_card">Sun-Glass</p>
+        <div class="bid2">
+          <div class="bid3">
+           <p class="bid">Current bid</p>
+           <p class="price">
+           <img src="./img/icon.png" alt="icon">
+           1.75
+           </p>
+          </div>
+          <button>Place Bid</button>
+        </div>
+      </div>
+      <div class="nft-card">
+        <div class="nft-header">
+          <img src="./img/1.png" alt="NFT Image">
+          <span class="timer">07h 09m 12s</span>
+        </div>
+        
+        <p class="title_card">Sun-Glass</p>
+        <div class="bid2">
+          <div class="bid3">
+           <p class="bid">Current bid</p>
+           <p class="price">
+           <img src="./img/icon.png" alt="icon">
+           1.75
+           </p>
+          </div>
+          <button>Place Bid</button>
+        </div>
+      </div>
+      <div class="nft-card">
+        <div class="nft-header">
+          <img src="./img/2.png" alt="NFT Image">
+          <span class="timer">07h 09m 12s</span>
+        </div>
+        
+        <p class="title_card">Sun-Glass</p>
+        <div class="bid2">
+          <div class="bid3">
+           <p class="bid">Current bid</p>
+           <p class="price">
+           <img src="./img/icon.png" alt="icon">
+           1.75
+           </p>
+          </div>
+          <button>Place Bid</button>
+        </div>
+      </div>
+      <div class="nft-card">
+        <div class="nft-header">
+          <img src="./img/4.png" alt="NFT Image">
+          <span class="timer">07h 09m 12s</span>
+        </div>
+        
+        <p class="title_card">Sun-Glass</p>
+        <div class="bid2">
+          <div class="bid3">
+           <p class="bid">Current bid</p>
+           <p class="price">
+           <img src="./img/icon.png" alt="icon">
+           1.75
+           </p>
+          </div>
+          <button>Place Bid</button>
+        </div>
+      </div>
+    </div> -->
+  </main>
+  </div>
+
+  <script>
+    const products = [
+  { img: "./img/1.png", name: "Orange", price: 1.75, color: 1 },
+        { img: "./img/2.png", name: "blue", price: 1.75, color: 2 },
+        { img: "./img/3.png", name: "Pink", price: 2.10, color: 3 },
+        { img: "./img/4.png", name: "Gray", price: 1.25, color: 4 },
+        { img: "./img/2.png", name: "Blue", price: 1.80, color: 2 },
+        { img: "./img/1.png", name: "Orange", price: 1.25, color: 1 },
+        { img: "./img/4.png", name: "Gray", price: 2.00, color: 4 },
+        { img: "./img/3.png", name: "Pink", price: 1.75, color: 3 },
+        { img: "./img/3.png", name: "Pink", price: 3.30, color: 3 },
+        { img: "./img/1.png", name: "Orange", price: 2.80, color: 1},
+        { img: "./img/2.png", name: "Blue", price: 1.75, color: 2 },
+        { img: "./img/4.png", name: "Gray", price: 2.10, color: 4 },
+];
+
+const productsContainer = document.querySelector('.products');
+const searchInput = document.getElementById('searchProduct');
+const sortOrderSelect = document.getElementById('sortOrder');
+const filterButtons = document.querySelectorAll('.filters button');
+
+function displayProducts(productsArray) {
+    productsContainer.innerHTML = "";
+    productsArray.forEach(product => {
+        const productElement = document.createElement('div');
+        productElement.classList.add('product');
+        productElement.innerHTML = `
+            <img src="${product.imageURL}" alt="${product.name}">
+            <h3>${product.name}</h3>
+            <p>Category: ${product.category}</p>
+            <p>Price: $${product.price}</p>
+        `;
+        productsContainer.appendChild(productElement);
+    });
+}
+
+  </script>
+</body>
+</html>
